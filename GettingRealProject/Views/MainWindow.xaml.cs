@@ -8,8 +8,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GettingRealProject.Models;
 
-namespace GettingRealProject
+namespace GettingRealProject.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
