@@ -53,16 +53,16 @@ namespace GettingRealProject.Models
                 balance >= 0)
 
             {
-                result = new Customer();
-                {
-                    Name = name,
-                    Email = email,
-                    PhoneNumber = phoneNumber,
-                    Username = username,
-                    Password = password,
-                    Balance = balance;
+                //result = new Customer();
+                //{
+                //    Name = name,
+                //    Email = email,
+                //    PhoneNumber = phoneNumber,
+                //    Username = username,
+                //    Password = password,
+                //    Balance = balance;
 
-                }
+                //}
                 
                 customers.Add(result);
             }
