@@ -14,27 +14,27 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="75" />
             <RowDefinition />
-
         </Grid.RowDefinitions>
 
         <Rectangle Grid.Row="0" Fill="#adaDAD" />
-        <Label
-            x:Name="Welcome"
+
+        <TextBlock
             Grid.Row="1"
             Margin="48,42,0,0"
             HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Content="Velkommen [Navn]" />
-        <Label
-            x:Name="Balance"
+            VerticalAlignment="Top">
+            <Run Text="Velkommen " />
+            <Run Text="{Binding CurrentCustomer.Name}" />
+        </TextBlock>
+
+        <TextBlock
             Grid.Row="1"
             Margin="48,87,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
-            Content="Saldo = 0" />
+            Text="{Binding BalanceText}" />
 
         <Button
-            x:Name="BtnFill"
             Grid.Row="1"
             Margin="57,250,0,0"
             HorizontalAlignment="Left"
@@ -42,7 +42,5 @@
             Background="#03c04a"
             Click="Button_Click"
             Content="Tank op" />
-
     </Grid>
-
 </Window>

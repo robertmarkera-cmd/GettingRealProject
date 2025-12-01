@@ -47,6 +47,7 @@
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Background="#03c04a"
+            Click="Button_Click"
             Content="Betal" />
 
     </Grid>
