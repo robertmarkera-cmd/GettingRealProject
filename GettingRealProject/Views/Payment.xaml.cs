@@ -1,11 +1,13 @@
 ﻿using GettingRealProject.Models;
 using System.Windows;
 
+
 namespace GettingRealProject.Views
 {
    
     public partial class Payment : Window
     {
+        private readonly CustomerRepository customerRepository;
         public Payment()
         {
             InitializeComponent();
@@ -14,18 +16,11 @@ namespace GettingRealProject.Views
         {
 
             double.TryParse(AmountBox.Text, out double amount);
-            
+
+            customerRepository.UpdateBalance(amount);
 
             this.Close();
 
-
-            //if (DataContext is ViewModel vm)
-            //{
-            //    if (double.TryParse(AmountBox.Text, out double amount))
-            //    {
-            //        vm.CurrentCustomer.UpdateBalance(amount);
-            //    }
-            //}
         }
     }
 }
