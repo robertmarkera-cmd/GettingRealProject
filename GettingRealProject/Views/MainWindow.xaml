@@ -31,7 +31,8 @@
             Margin="48,87,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
-            Content="{Binding CurrentCustomer.Balance}" />
+            Content="Saldo = 0" />
+
         <Button
             x:Name="BtnFill"
             Grid.Row="1"
