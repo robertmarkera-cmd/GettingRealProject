@@ -12,16 +12,36 @@
     mc:Ignorable="d">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="75"/>
-            <RowDefinition/>
-            
+            <RowDefinition Height="75" />
+            <RowDefinition />
+
         </Grid.RowDefinitions>
 
-        <Rectangle Grid.Row="0" Fill="#adaDAD"/>
-        <Label x:Name="Welcome" Content="Velkommen [Navn]" HorizontalAlignment="Left" Margin="48,42,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <Label x:Name="Balance" Content="Saldo =0" HorizontalAlignment="Left" Margin="48,87,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <Button x:Name="BtnFill" Content="Tank op" Background="#03c04a" HorizontalAlignment="Left" Margin="57,250,0,0" Grid.Row="1" VerticalAlignment="Top" Click="Button_Click"/>
+        <Rectangle Grid.Row="0" Fill="#adaDAD" />
+        <Label
+            x:Name="Welcome"
+            Grid.Row="1"
+            Margin="48,42,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Velkommen [Navn]" />
+        <Label
+            x:Name="Balance"
+            Grid.Row="1"
+            Margin="48,87,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Saldo =0" />
+        <Button
+            x:Name="BtnFill"
+            Grid.Row="1"
+            Margin="57,250,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="#03c04a"
+            Click="Button_Click"
+            Content="Tank op" />
 
     </Grid>
-    
+
 </Window>
