@@ -1,10 +1,11 @@
 ﻿using System;
+using System.ComponentModel;
 using System.IO;
 using System.Xml.Linq;
 
 namespace GettingRealProject.Models
 {
-    public class CustomerRepository
+    public class CustomerRepository 
     {
         private List<Customer> customers;
 
@@ -71,6 +72,11 @@ namespace GettingRealProject.Models
 
             return result;
         }
+        public void UpdateBalance(double amount)
+        {
+            
+        }
+
     }
 }
 

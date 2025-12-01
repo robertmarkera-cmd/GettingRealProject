@@ -1,7 +1,11 @@
-﻿namespace GettingRealProject.ViewModel
+﻿using GettingRealProject.Models;
+using System.ComponentModel;
+
+namespace GettingRealProject.ViewModel
 {
-    public class CustomerViewModel
+    public class CustomerViewModel 
     {
+        
 
     }
 }
