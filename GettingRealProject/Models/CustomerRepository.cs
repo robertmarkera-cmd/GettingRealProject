@@ -9,6 +9,8 @@ namespace GettingRealProject.Models
     {
         private List<Customer> customers;
 
+        public double balance { get; private set; }
+
         public CustomerRepository()
         {
             customers = new List<Customer>();
@@ -43,7 +45,6 @@ namespace GettingRealProject.Models
         public Customer Add(string name, string email, int phoneNumber, string username, string password, double balance)
         {
 
-
             Customer result = null;
 
             if (!string.IsNullOrEmpty(name) &&
@@ -54,17 +55,7 @@ namespace GettingRealProject.Models
                 balance >= 0)
 
             {
-                //result = new Customer();
-                //{
-                //    Name = name,
-                //    Email = email,
-                //    PhoneNumber = phoneNumber,
-                //    Username = username,
-                //    Password = password,
-                //    Balance = balance;
-
-                //}
-                
+               
                 customers.Add(result);
             }
             else
@@ -74,7 +65,7 @@ namespace GettingRealProject.Models
         }
         public void UpdateBalance(double amount)
         {
-            
+            this.balance += amount; 
         }
 
     }
