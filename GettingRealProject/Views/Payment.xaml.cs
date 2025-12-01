@@ -5,20 +5,20 @@ namespace GettingRealProject.Views
 {
     public partial class Payment : Window
     {
-        private readonly MainViewModel _viewModel;
+        private readonly MainViewModel vm;
 
         public Payment(MainViewModel viewModel)
         {
             InitializeComponent();
-            _viewModel = viewModel;
-            DataContext = _viewModel;
+            vm = viewModel;
+            DataContext = vm;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             double.TryParse(AmountBox.Text, out double amount);
            
-            _viewModel.UpdateBalance(amount);
+            vm.UpdateBalance(amount);
 
             DialogResult = true;
             Close();
