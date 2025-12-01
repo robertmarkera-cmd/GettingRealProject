@@ -16,6 +16,7 @@
         <Rectangle Grid.Row="0" Fill="#adaDAD"/>
         <TextBox HorizontalAlignment="Left" Margin="245,142,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="216" Height="51" Background="Transparent"/>
         <Label x:Name="Fillin_Amount" Content="Indtast beløb:" HorizontalAlignment="Left" Margin="276,111,0,0" Grid.Row="1" VerticalAlignment="Top" Width="154"/>
+        <Button x:Name="Paybutton" Content="Betal" Background="#03c04a" HorizontalAlignment="Left" Margin="306,207,0,0" Grid.Row="1" VerticalAlignment="Top" Height="20" Width="69"/>
 
     </Grid>
 </Window>
