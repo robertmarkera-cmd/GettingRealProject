@@ -37,7 +37,7 @@ namespace GettingRealProject.Models
             }
             catch (IOException)
             {
-                // keep simple for this sample
+               
             }
         }
 
