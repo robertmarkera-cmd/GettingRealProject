@@ -10,7 +10,7 @@ namespace GettingRealProject.ViewModel
             
         public CustomerRepository CustomerRepo { get; }
 
-        public Customer? CurrentCustomer
+        public Customer CurrentCustomer
         {
             get => currentCustomer;
             set
