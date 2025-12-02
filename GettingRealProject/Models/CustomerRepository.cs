@@ -20,8 +20,7 @@ namespace GettingRealProject.Models
             if (!File.Exists("Customers.csv"))
                 return;
 
-            try
-            {
+            
                 using var sr = new StreamReader("Customers.csv");
                 string? line;
                 while ((line = sr.ReadLine()) != null)
@@ -34,11 +33,7 @@ namespace GettingRealProject.Models
                         Add(parts[0], parts[1], phone, parts[3], parts[4], balance);
                     }
                 }
-            }
-            catch (IOException)
-            {
-               
-            }
+            
         }
 
         public Customer Add(string name, string email, int phoneNumber, string username, string password, double balance)
