@@ -1,7 +1,6 @@
-﻿using System.ComponentModel;
+﻿using GettingRealProject.Models;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Linq;
-using GettingRealProject.Models;
 
 namespace GettingRealProject.ViewModel
 {

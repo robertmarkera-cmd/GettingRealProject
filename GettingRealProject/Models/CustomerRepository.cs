@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.IO;
 
 namespace GettingRealProject.Models
 {
@@ -53,10 +50,21 @@ namespace GettingRealProject.Models
             return customer;
         }
 
-        public Customer? Get(string userName) =>
-            customers.FirstOrDefault(c => string.Equals(c.UserName, userName, StringComparison.OrdinalIgnoreCase));
+        public Customer Get(string userName)
+        {
+            foreach (var c in customers)
+            {
+                if (c.UserName == userName)
+                    return c;
+            }
+            return null;
+        }
 
-        public List<Customer> GetAll() => new List<Customer>(customers);
+        public List<Customer> GetAll()
+        {
+            return customers;
+        }
+
 
         public void Update(Customer customer)
         {
