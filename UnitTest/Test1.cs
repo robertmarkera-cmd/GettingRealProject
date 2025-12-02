@@ -4,8 +4,15 @@
     public sealed class Test1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void AddCustomer()
         {
+
+        }
+
+        [TestMethod]
+        public void TestMethod2()
+        {
+
         }
     }
 }
