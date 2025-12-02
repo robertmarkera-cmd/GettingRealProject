@@ -1,6 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using GettingRealProject;
-using GettingRealProject.Models;
+﻿using GettingRealProject.Models;
 using GettingRealProject.ViewModel;
 
 namespace UnitTest
@@ -16,7 +14,7 @@ namespace UnitTest
         }
 
         [TestMethod]
-        public void Add1Customer()
+        public void AddCustomer()
         {
             // Arrange
             var cr = new CustomerRepository();
