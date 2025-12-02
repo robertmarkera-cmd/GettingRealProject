@@ -9,15 +9,11 @@ namespace UnitTest
     [TestClass]
     public sealed class Test1
     {
-
-
         [TestInitialize]
         public void Init()
         {
-            
 
         }
-
 
         [TestMethod]
         public void Add1Customer()
@@ -74,9 +70,23 @@ namespace UnitTest
 
         }
 
+        [TestMethod]
+        public void GetCustomerBalance()
+        {
+            // Arrange
+            var cr = new CustomerRepository();
+            var vm = new MainViewModel();
+
+            var customer1 = cr.Add("Jan", "j@gmail.com", 10101010, "jan12", "password", 0);
+
+            vm.CurrentCustomer = customer1;
+
+            // Assert
+            Assert.AreEqual(0, customer1.Balance);
+        }
 
         [TestMethod]
-        public void Payment()
+        public void UpdateCustomerBalance()
         {
             // Arrange
             var cr = new CustomerRepository();
@@ -94,27 +104,6 @@ namespace UnitTest
 
         }
 
-        [TestMethod]
-        public void GettingCustomerBalance()
-        {
-
-        }
-        [TestMethod]
-        public void UpdatingCustomerBalance()
-        {
-
-        }
-        [TestMethod]
-        public void ReadToStreamrider()
-        {
-
-        }
-
-        [TestMethod]
-        public void WriteToStreamrider()
-        {
-
-        }
 
     }
 }
