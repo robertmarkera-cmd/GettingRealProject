@@ -22,7 +22,7 @@ namespace GettingRealProject.Models
 
             
                 using var sr = new StreamReader("Customers.csv");
-                string? line;
+                string line;
                 while ((line = sr.ReadLine()) != null)
                 {
                     var parts = line.Split(',');
