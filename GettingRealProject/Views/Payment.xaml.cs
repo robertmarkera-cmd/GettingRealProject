@@ -1,4 +1,4 @@
-﻿using GettingRealProject.ViewModel;
+﻿using GettingRealProject.ViewModels;
 using System.Windows;
 
 namespace GettingRealProject.Views

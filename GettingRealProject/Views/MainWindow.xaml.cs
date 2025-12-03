@@ -1,5 +1,5 @@
 ﻿using System.Windows;
-using GettingRealProject.ViewModel;
+using GettingRealProject.ViewModels;
 
 namespace GettingRealProject.Views
 {

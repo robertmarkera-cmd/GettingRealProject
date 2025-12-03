@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace GettingRealProject.ViewModel
+namespace GettingRealProject.ViewModels
 {
     public class MainViewModel : INotifyPropertyChanged
     {
