@@ -46,6 +46,8 @@ namespace GettingRealProject.ViewModel
                     balance: 0d
                 );
             }
+            
+            CustomerRepo.SaveRepository();
         }
 
         public void UpdateBalance(double amount)

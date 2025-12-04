@@ -14,10 +14,9 @@ namespace GettingRealProject.Models
 
         private void InitializeRepository()
         {
-            if (!File.Exists("Customers.csv"))
+            if(!File.Exists("Customers.csv"))
                 return;
 
-            
                 using var sr = new StreamReader("Customers.csv");
                 string line;
                 while ((line = sr.ReadLine()) != null)
@@ -29,6 +28,17 @@ namespace GettingRealProject.Models
                     {
                         Add(parts[0], parts[1], phone, parts[3], parts[4], balance);
                     }
+                }
+            
+        }
+
+        public void SaveRepository()
+        {
+           
+                using var sw = new StreamWriter("Customers.csv");
+                foreach (var customer in customers)
+                {
+                    sw.WriteLine($"{customer.Name},{customer.Email},{customer.PhoneNumber},{customer.UserName},{customer.Password},{customer.Balance}");
                 }
             
         }
