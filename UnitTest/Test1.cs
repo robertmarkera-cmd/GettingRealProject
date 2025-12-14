@@ -2,7 +2,6 @@
 using GettingRealProject.ViewModel;
 
 namespace UnitTest
-
 {
     [TestClass]
     public sealed class Test1
@@ -14,7 +13,7 @@ namespace UnitTest
         }
 
         [TestMethod]
-        public void AddCustomer()
+        public void AddCustomerExist()
         {
             // Arrange
             var cr = new CustomerRepository();
@@ -74,13 +73,14 @@ namespace UnitTest
             // Arrange
             var cr = new CustomerRepository();
             var vm = new MainViewModel();
-
             var customer1 = cr.Add("Jan", "j@gmail.com", 10101010, "jan12", "password", 0);
-
             vm.CurrentCustomer = customer1;
 
+            // Act
+            var balance = vm.CurrentCustomer.Balance;
+
             // Assert
-            Assert.AreEqual(0, customer1.Balance);
+            Assert.AreEqual(0, balance);
         }
 
         [TestMethod]
@@ -89,9 +89,7 @@ namespace UnitTest
             // Arrange
             var cr = new CustomerRepository();
             var vm = new MainViewModel();
-
             var customer1 = cr.Add("Jan", "j@gmail.com", 10101010, "jan12", "password", 0);
-
             vm.CurrentCustomer = customer1;
 
             // Act
