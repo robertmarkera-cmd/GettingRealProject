@@ -79,8 +79,11 @@ namespace UnitTest
 
             vm.CurrentCustomer = customer1;
 
+            //act
+            var balance = vm.CurrentCustomer.Balance;
+
             // Assert
-            Assert.AreEqual(0, customer1.Balance);
+            Assert.AreEqual(0, balance);
         }
 
         [TestMethod]
