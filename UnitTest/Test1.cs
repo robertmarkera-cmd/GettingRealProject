@@ -69,7 +69,7 @@ namespace UnitTest
         }
 
         [TestMethod]
-        public void GetCustomerBalance()
+        public void CustomerShouldHaveZeroBalanceWhenCreated()
         {
             // Arrange
             var cr = new CustomerRepository();
